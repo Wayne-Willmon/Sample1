@@ -7,15 +7,27 @@
   DTS:CreatorName="TAMUCC\wwillmon"
   DTS:DTSID="{66C0653B-AF4D-406A-960D-5147C09FC9FE}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="11.0.6020.0"
+  DTS:LastModifiedProductVersion="11.0.6260.1"
   DTS:LocaleID="1033"
   DTS:ObjectName="AddedPackage1"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{157323F1-F758-4A3E-BD4E-7951FB421EAC}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{ACE48AA4-9D7C-4DC5-81B5-CD6385EC49A1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[edw-bba-devdb.Blueberry]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8E9CD4F8-6773-415C-B24B-E6CCB038AEB1}"
+      DTS:ObjectName="edw-bba-devdb.Blueberry">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=edw-bba-devdb;Initial Catalog=Blueberry;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables />
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
